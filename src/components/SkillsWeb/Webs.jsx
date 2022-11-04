@@ -20,7 +20,10 @@ const Webs = () => {
               key={item.id}
               className={classes.skillscard}
             >
-              <img src={`/images/skills/${item.image}`} alt={item.alt} />
+              <img
+                src={process.env.PUBLIC_URL + `/images/skills/${item.image}`}
+                alt={item.alt}
+              />
               <p>{item.text}</p>
             </motion.div>
           );

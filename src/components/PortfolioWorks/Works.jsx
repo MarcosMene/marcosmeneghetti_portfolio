@@ -26,7 +26,12 @@ const Works = () => {
                 className={classes.card_wrapper}
               >
                 <p>{item.text}</p>
-                <img src={`/images/portfolio/${item.image}`} alt={item.alt} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + `/images/portfolio/${item.image}`
+                  }
+                  alt={item.alt}
+                />
               </motion.div>
             </Link>
           );
