@@ -44,7 +44,7 @@ const Header = () => {
       <header className={classes.header}>
         <section className={classes.header_content}>
           <NavLink to="/" className={classes.header_content_logo}>
-            <img src={`../images/logo/logo.png`} alt="logo" />
+            <img src={`/images/logo/logo.png`} alt="logo" />
           </NavLink>
           <nav
             className={`${classes.header_content_nav} ${

@@ -71,10 +71,7 @@ const Contact = () => {
             >
               <div className={classes.heropage_txt_container_contact}>
                 <div className={classes.heropage_txt_container_contact_icon}>
-                  <img
-                    src={`./images/contact/emailIcon.png`}
-                    alt="email icon"
-                  />
+                  <img src={`/images/contact/emailIcon.png`} alt="email icon" />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
                   <p
@@ -86,10 +83,7 @@ const Contact = () => {
               </div>
               <div className={classes.heropage_txt_container_contact}>
                 <div className={classes.heropage_txt_container_contact_icon}>
-                  <img
-                    src={`./images/contact/phoneIcon.png`}
-                    alt="phone icon"
-                  />
+                  <img src={`/images/contact/phoneIcon.png`} alt="phone icon" />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
                   <p
@@ -102,7 +96,7 @@ const Contact = () => {
               <div className={classes.heropage_txt_container_contact}>
                 <div className={classes.heropage_txt_container_contact_icon}>
                   <img
-                    src={`./images/contact/githubIcon.png`}
+                    src={`/images/contact/githubIcon.png`}
                     alt="github icon"
                   />
                 </div>
@@ -117,7 +111,7 @@ const Contact = () => {
               <div className={classes.heropage_txt_container_contact}>
                 <div className={classes.heropage_txt_container_contact_icon}>
                   <img
-                    src={`./images/contact/linkedinIcon.png`}
+                    src={`/images/contact/linkedinIcon.png`}
                     alt="linkedin icon"
                   />
                 </div>
@@ -142,7 +136,7 @@ const Contact = () => {
                 (window.location = "mailto:meneghettimarcos@outlook.com")
               }
             >
-              <img src={`./images/links/email.png`} alt="email" />
+              <img src={`/images/links/email.png`} alt="email" />
             </Links>
           </motion.div>
         </section>

@@ -102,7 +102,7 @@ const About = () => {
               exit="hide"
               className={classes.heropage_txt_container_photo}
             >
-              <img src={`./images/about/marcosBig.png`} alt="me" />
+              <img src={`/images/about/marcosBig.png`} alt="me" />
             </motion.div>
           </div>
           <motion.div
@@ -128,7 +128,7 @@ const About = () => {
                 (window.location = "mailto:meneghettimarcos@outlook.com")
               }
             >
-              <img src={`./images/links/email.png`} alt="email" />
+              <img src={`/images/links/email.png`} alt="email" />
             </Links>
           </motion.div>
         </section>
