@@ -235,18 +235,34 @@ main {
     justify-content: space-between;
     margin: 0 auto 25px;
 
-    button a {
-        color: $light;
-        text-decoration: none;
-        transition: .3s;
-    }
-
-    button:hover a {
-        color: $dark;
-    }
-
     @include breakpoint(lg) {
         width: 320px;
         margin: 0;
+    }
+}
+
+.buttonLink {
+    border: 2px solid $secondary;
+    font-size: 0.9rem;
+    padding: $paddingHighSmall $paddingSideSmall;
+    border-radius: $borderRadiusSmall;
+    font-family: $Poppins;
+    cursor: pointer;
+    background-color: $secondary;
+    color: $light;
+    transition: .3s;
+
+    &:hover {
+        background-color: $light;
+        color: $dark;
+
+    }
+
+    @include breakpoint(lg) {
+        padding: $paddingHighLarge $paddingSideLarge;
+        border-radius: $borderRadius;
+        font-size: 1rem;
+        border: 3px solid $secondary;
+        font-weight: 500;
     }
 }

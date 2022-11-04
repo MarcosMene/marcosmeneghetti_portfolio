@@ -49,11 +49,18 @@ const About = () => {
                 >
                   Contact Me
                 </Button>
-                <Button>
-                  <a href="./images/about/Marcos_Meneghetti_CV.pdf" download>
-                    Download CV
-                  </a>
-                </Button>
+
+                <motion.a
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  exit={{ opacity: 0, scale: 0 }}
+                  className={classes.buttonLink}
+                  href="./images/about/Marcos_Meneghetti_CV.pdf"
+                  download
+                >
+                  Download CV
+                </motion.a>
               </div>
             </div>
 
