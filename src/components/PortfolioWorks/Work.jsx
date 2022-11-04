@@ -38,7 +38,9 @@ const Work = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             exit={{ opacity: 0, x: "-100vh" }}
-            src={`../images/portfolio/${singlework.image}`}
+            src={
+              process.env.PUBLIC_URL + `/images/portfolio/${singlework.image}`
+            }
             alt={singlework.alt}
           />
           <motion.div
