@@ -103,7 +103,7 @@ const About = () => {
               className={classes.heropage_txt_container_photo}
             >
               <img
-                src={process.env.PUBLIC_URL + "/images/about/marcosBig.png"}
+                src={process.env.PUBLIC_URL + `/images/about/marcosBig.png`}
                 alt="me"
               />
             </motion.div>
