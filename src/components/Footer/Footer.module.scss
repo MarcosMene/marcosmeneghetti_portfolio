@@ -1,0 +1,47 @@
+@import '../../styles/index.scss';
+
+.footer_full {
+    width: 100%;
+    position: relative;
+    background-color: $primary;
+    min-height: $headerHeight;
+    z-index: 20;
+}
+
+.footer {
+    width: 100%;
+    background-color: $primary;
+    height: $headerHeight;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: $maxwidth;
+    margin: auto;
+    font-family: $Manrope;
+    padding: 50px 0;
+
+
+    @include breakpoint(md) {
+        padding: 10px $paddingContainerLarge;
+    }
+
+    &_name {
+        font-size: .9rem;
+        margin: 0px 0 4px;
+        letter-spacing: 1px;
+        font-family: $Manrope;
+    }
+
+    &_email {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+
+    &_copyright {
+        font-size: .7rem;
+    }
+}

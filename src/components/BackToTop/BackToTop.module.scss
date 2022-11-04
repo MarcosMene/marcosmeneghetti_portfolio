@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.buttonGoTop button {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    z-index: 400;
+    color: $light;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $secondary;
+    transition: 0.3s;
+    opacity: 0;
+
+    &:hover {
+        box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+        -webkit-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+        color: $secondary;
+        background-color: $light;
+    }
+
+    @include breakpoint(md) {
+        right: 50px;
+    }
+}

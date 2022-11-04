@@ -1,0 +1,139 @@
+@import '../../styles/index.scss';
+
+.hero_page_wrapper {
+
+    .heropage {
+
+
+        &_title {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+
+            &_text {
+                font-size: 3rem;
+                font-weight: 600;
+
+                @include breakpoint(lg) {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        &_line {
+            width: 100%;
+            height: $redlineHeight;
+            background-color: $secondary;
+            border-radius: 10px;
+            margin: 0 0 16px 0;
+
+            @include breakpoint(lg) {
+                width: 50%;
+            }
+        }
+
+        &_message {
+            color: $darkLight;
+            font-weight: 400;
+            margin: 10px 0 60px;
+            font-size: 1rem;
+            width: 100%;
+
+            @include breakpoint(lg) {
+                font-size: 1.5rem;
+                width: 80%;
+
+            }
+        }
+
+        &_work {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0 40px;
+            font-family: $Manrope;
+
+            @include breakpoint(lg) {
+                margin: 10px 0 0px;
+            }
+
+            p {
+                width: 70%;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 0 10px;
+                font-weight: 300;
+                font-family: $Poppins;
+
+                @include breakpoint(lg) {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .heropage_line {
+                width: 40%;
+                height: $redlineHeight;
+                background-color: $secondary;
+                border-radius: 10px;
+                margin: 0;
+                display: flex;
+                align-items: flex-start;
+
+                @include breakpoint(md) {
+                    width: 100%;
+                }
+            }
+        }
+
+        //web develop and tools
+        &_tools {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        &_tool {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: $light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-size: 3em;
+            flex-direction: column;
+            -webkit-box-shadow: 5px 5px 6px -2px #0000006b;
+            box-shadow: 5px 5px 6px -2px #0000006b;
+
+            img {
+                width: 40%;
+                margin: 7px;
+            }
+
+            p {
+                font-size: .7rem;
+                width: 70%;
+                color: $secondary;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            @include breakpoint(lg) {
+                width: 120px;
+                height: 120px;
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

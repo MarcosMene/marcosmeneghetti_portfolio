@@ -1,0 +1,153 @@
+@import '../../styles/index.scss';
+
+.hero_page_wrapper {
+
+    @include breakpoint(md) {
+        padding: 1rem $paddingContainerLarge;
+    }
+
+    .heropage {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+
+        @include breakpoint(lg) {
+            margin-top: 80px;
+
+        }
+
+        &_content_wrapper {
+            width: 100%;
+            padding-right: 20px;
+            margin-bottom: 40px;
+
+            @include breakpoint(lg) {
+                margin-bottom: 0;
+            }
+        }
+
+        &_content {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            img {
+                margin-bottom: 25px;
+            }
+        }
+
+        &_title {
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+
+            &_text {
+                font-size: 3rem;
+                font-weight: 600;
+
+                @include breakpoint(lg) {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        &_line {
+            width: 50%;
+            height: $redlineHeight;
+            background-color: $secondary;
+            border-radius: 10px;
+            margin: 0 0 16px 10px;
+        }
+
+        &_message {
+            color: $darkLight;
+            font-weight: 400;
+            margin: 10px 0 0px;
+            font-size: 1rem;
+            width: 100%;
+
+            @include breakpoint(lg) {
+                font-size: 1.5rem;
+                width: 80%;
+                margin: 10px 0 40px;
+            }
+        }
+
+        &_links {
+            display: none;
+
+            @include breakpoint(lg) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin: 0;
+                height: 100%;
+                width: 10%;
+            }
+        }
+
+        &_txt_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+
+            @include breakpoint(lg) {
+                justify-content: space-evenly;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        &_txt_container_wrapper_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+            background-color: $light;
+            padding: 20px 0;
+            box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+            -webkit-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+            -moz-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+            border-radius: $borderRadius;
+            margin-top: 40px;
+
+            p {
+                font-size: .8rem;
+            }
+
+            @include breakpoint(lg) {
+                width: 70%;
+                margin-top: 0;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .heropage_txt_container_contact {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                margin: 10px 0;
+
+                &_text {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

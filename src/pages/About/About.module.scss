@@ -1,0 +1,125 @@
+@import '../../styles/index.scss';
+
+.hero_page_wrapper {
+
+    .heropage {
+
+        &_title {
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+
+            &_text {
+                font-size: 2.5rem;
+                font-weight: 600;
+                opacity: 0;
+
+                @include breakpoint(lg) {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        &_line {
+            width: 50%;
+            height: $redlineHeight;
+            background-color: $secondary;
+            border-radius: 10px;
+            margin: 0 0 16px 10px;
+        }
+
+        &_message {
+            color: $darkLight;
+            font-weight: 400;
+            margin: 0 0 60px;
+            font-size: 1rem;
+
+            @include breakpoint(lg) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &_txt_container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            @include breakpoint(lg) {
+                flex-direction: row;
+                align-items: flex-start;
+                margin-top: 40px;
+            }
+        }
+
+        &_txt_container_photo img {
+            width: 200px;
+            margin: 40px 0 20px;
+
+            @include breakpoint(lg) {
+                margin: 0;
+                margin-right: 20px;
+                margin-left: 50px;
+                width: 300px;
+            }
+        }
+
+        &_txt_container_text {
+            margin-bottom: 20px;
+        }
+
+        &_txt_container_text p {
+            margin-bottom: 20px;
+            font-size: .9rem;
+            width: 100%;
+            font-family: $Poppins;
+
+            @include breakpoint(lg) {
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+        }
+
+        &_work {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            font-family: $Manrope;
+
+            @include breakpoint(lg) {
+                margin: 10px 0 0;
+            }
+
+            p {
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 0 10px;
+
+                @include breakpoint(lg) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .heropage_line {
+                width: 10%;
+                height: $redlineHeight;
+                background-color: $secondary;
+                border-radius: 10px;
+                margin: 0;
+                display: flex;
+                align-items: flex-start;
+
+                @include breakpoint(md) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../styles/index.scss';
+
+
+
+/* grid*/
+.skillsContainer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsContainer h3 {
+    font-family: $Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    color: gray;
+    opacity: 0;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillscard {
+    display: flex;
+    background: $light;
+    height: 130px;
+    width: 130px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+    border-radius: $borderRadius;
+    box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+
+    &:hover {
+        box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+        -webkit-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.28);
+    }
+
+    p {
+        margin-top: 4px;
+        color: $secondary;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+}
+
+.skillcard img {
+    width: 42%;
+    height: 42%;
+    object-fit: contain;
+}

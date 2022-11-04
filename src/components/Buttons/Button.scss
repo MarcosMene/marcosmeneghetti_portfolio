@@ -1,0 +1,52 @@
+@import '../../styles/index.scss';
+
+
+.fill {
+    border: 2px solid $secondary;
+    font-size: 0.9rem;
+    padding: $paddingHighSmall $paddingSideSmall;
+    border-radius: $borderRadiusSmall;
+    font-family: $Poppins;
+    cursor: pointer;
+    background-color: $secondary;
+    color: $light;
+    transition: .3s;
+
+    &:hover {
+        background-color: $light;
+        color: $dark;
+
+    }
+
+    @include breakpoint(lg) {
+        padding: $paddingHighLarge $paddingSideLarge;
+        border-radius: $borderRadius;
+        font-size: 1rem;
+        border: 3px solid $secondary;
+        font-weight: 500;
+    }
+}
+
+.outline {
+    border: 2px solid $secondary;
+    font-size: 0.9rem;
+    padding: $paddingHighSmall $paddingSideSmall;
+    border-radius: $borderRadiusSmall;
+    background-color: $bg;
+    font-family: $Poppins;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: $light;
+        background-color: $secondary;
+    }
+
+    @include breakpoint(lg) {
+        padding: $paddingHighLarge $paddingSideLarge;
+        border-radius: $borderRadius;
+        font-size: 1rem;
+        border: 3px solid $secondary;
+        font-weight: 500;
+    }
+}
