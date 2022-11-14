@@ -3,13 +3,14 @@
 Hi, my name is Marcos Meneghetti. I am a Front-End JavaScript React developer. Here you will find informations about me and my works as front-end developer.
 
 **link:**
-https://marcosmene.github.io/marcosmeneghetti_portfolio/#/
+https://marcosmene.github.io/marcosmeneghetti_portfolio
 
-To create my portfolio page, I have used React and framer motion for animations.
+**The tools I used to create my portfolio:**
+_Affinity Designer_ for the page layout, and _React and Framer motion_ for the code and animation.
 
 If you are interested on my work, feel free to contact me.
 
-**email**
+**Get in touch**
 meneghettimarcos@outlook.com
 
 Thank you very much

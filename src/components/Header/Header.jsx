@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
-import classes from "./Header.module.scss";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { AiOutlineClose } from 'react-icons/ai';
+import classes from './Header.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const navLinkStyles = ({ isActive }) => {
     return {
-      textDecoration: isActive ? "solid underline red 2px" : "none",
-      textUnderlineOffset: "10px",
+      textDecoration: isActive ? 'solid underline red 2px' : 'none',
+      textUnderlineOffset: '10px',
     };
   };
 
@@ -25,8 +25,8 @@ const Header = () => {
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const Header = () => {
           </NavLink>
           <nav
             className={`${classes.header_content_nav} ${
-              menuOpen && size.width < 992 ? classes.isMenu : ""
+              menuOpen && size.width < 992 ? classes.isMenu : ''
             }`}
           >
             <ul>
@@ -105,9 +105,9 @@ const Header = () => {
           </nav>
           <div className={classes.header_content_toggle}>
             {!menuOpen
-              ? (document.body.classList.remove("stopScroll"),
+              ? (document.body.classList.remove('stopScroll'),
                 (<BiMenuAltRight onClick={menuToggleHandler} />))
-              : (document.body.classList.add("stopScroll"),
+              : (document.body.classList.add('stopScroll'),
                 (<AiOutlineClose onClick={menuToggleHandler} />))}
           </div>
         </section>
