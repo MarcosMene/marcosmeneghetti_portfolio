@@ -229,6 +229,7 @@ export const Portfolio = [
       'Creation of the registration form',
       'Creation of front-end (twig,html,css, controller,respository)',
     ],
+    github: 'https://github.com/MarcosMene/Moviz',
     technology: ['SYMFONY', 'BOOTSTRAP', 'SASS', 'EASYADMIN'],
     language: 'Symfony',
   },
