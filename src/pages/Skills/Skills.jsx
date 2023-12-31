@@ -1,7 +1,7 @@
-import classes from "./Skills.module.scss";
-import Webs from "../../components/SkillsWeb/Webs";
-import Designs from "../../components/SkillsWeb/Designs";
-import { motion } from "framer-motion";
+import classes from './Skills.module.scss'
+import Webs from '../../components/SkillsWeb/Webs'
+import Designs from '../../components/SkillsWeb/Designs'
+import { motion } from 'framer-motion'
 import {
   backWords,
   h3Animation,
@@ -9,11 +9,11 @@ import {
   opacityPage,
   paragraphs,
   work,
-} from "../../Animations/Animations";
-import Footer from "../../components/Footer/Footer";
-import { Titlepage } from "../../components/Titlepage/Titlepage";
-import { Link } from "react-router-dom";
-import { Links } from "../../components/Links/Links";
+} from '../../Animations/Animations'
+import Footer from '../../components/Footer/Footer'
+import { Titlepage } from '../../components/Titlepage/Titlepage'
+import { Link } from 'react-router-dom'
+import { Links } from '../../components/Links/Links'
 
 const Skills = () => {
   return (
@@ -27,14 +27,14 @@ const Skills = () => {
         <section className={classes.heropage}>
           <div className={classes.heropage_content}>
             <div className={classes.heropage_content_wrapper}>
-              <Titlepage text={"Skills"} />
+              <Titlepage text={'Skills'} />
               <div className={classes.heropage_message}>
                 <motion.p
                   variants={messageAnimation}
                   animate="show"
                   exit="hide"
                 >
-                  These are the tools I use in my daily life as a front-end web
+                  These are the tools I use in my daily life as a full-stack
                   developer.
                 </motion.p>
               </div>
@@ -105,7 +105,7 @@ const Skills = () => {
             </a>
             <Link
               onClick={() =>
-                (window.location = "mailto:meneghettimarcos@outlook.com")
+                (window.location = 'mailto:meneghettimarcos@outlook.com')
               }
             >
               <img
@@ -127,7 +127,7 @@ const Skills = () => {
       </motion.main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

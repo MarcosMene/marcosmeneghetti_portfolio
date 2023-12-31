@@ -1,5 +1,5 @@
-import classes from "./Footer.module.scss";
-import { motion } from "framer-motion";
+import classes from './Footer.module.scss'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
@@ -13,15 +13,16 @@ const Footer = () => {
       <section className={classes.footer}>
         <div className={classes.footer_name}>
           <h4>Marcos Meneghetti</h4>
-          <span>Front-End Developer JavaScript-React</span>
+          <span>Full-stack developer</span>
         </div>
         <div className={classes.footer_copyright}>
-          <span>&#169; </span> 2022 Designed and developed by Marcos Meneghetti
+          <span>&#169; </span> 2022-<span>{new Date().getFullYear()}</span>{' '}
+          Designed and developed by Marcos Meneghetti
         </div>
         <div className={classes.footer_email}>meneghettimarcos@outlook.com</div>
       </section>
     </motion.footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,7 +1,7 @@
-import classes from "./About.module.scss";
-import Footer from "../../components/Footer/Footer";
+import classes from './About.module.scss'
+import Footer from '../../components/Footer/Footer'
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 import {
   h3Animation,
   messageAnimation,
@@ -11,15 +11,15 @@ import {
   opacityPage,
   scaleAnim,
   xAnimPos50,
-} from "../../Animations/Animations";
-import { useNavigate } from "react-router-dom";
-import { Button } from "../../components/Buttons/Button";
-import { Titlepage } from "../../components/Titlepage/Titlepage";
-import { Links } from "../../components/Links/Links";
-import BackToTop from "../../components/BackToTop/BackToTop";
+} from '../../Animations/Animations'
+import { useNavigate } from 'react-router-dom'
+import { Button } from '../../components/Buttons/Button'
+import { Titlepage } from '../../components/Titlepage/Titlepage'
+import { Links } from '../../components/Links/Links'
+import BackToTop from '../../components/BackToTop/BackToTop'
 
 const About = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <>
       <motion.main
@@ -31,19 +31,19 @@ const About = () => {
         <section className={classes.heropage}>
           <div className={classes.heropage_content}>
             <div className={classes.heropage_content_wrapper}>
-              <Titlepage text={"About"} />
+              <Titlepage text={'About'} />
               <div className={classes.heropage_message}>
                 <motion.p
                   variants={messageAnimation}
                   animate="show"
                   exit="hide"
                 >
-                  Front-End Developer based in France.
+                  Full-stack Developer based in France.
                 </motion.p>
               </div>
               <div className={classes.buttons}>
                 <Button
-                  onClick={() => navigate("/contact")}
+                  onClick={() => navigate('/contact')}
                   type="button"
                   buttonStyle="outline"
                 >
@@ -82,11 +82,12 @@ const About = () => {
               className={classes.heropage_txt_container_text}
             >
               <p>
-                My name is Marcos Meneghetti, I am a Front-End JavaScript and
-                React Developer. I discovered HTML in july 2020 and now it's "my
-                precious". I have a bachelor degree in publicity, certified in
-                Front-End development and I am certified in Game Designer. I
-                speak portuguese (maternal language), french and english.
+                My name is Marcos Meneghetti, I'm a Full-stack developer. I
+                discovered HTML in July 2020 and now it's "my precious". I have
+                a bachelor's degree in advertising, a certificate in Front-End
+                and a diploma in Full-stack development. I have knowledge of
+                design and 3D animation. I speak Portuguese (maternal language),
+                french, english and I have a good knowledge of spanish.
               </p>
 
               <p>
@@ -99,8 +100,7 @@ const About = () => {
 
               <p>
                 My passions are: web development, 3D animation, take pictures,
-                cinema, miniatures, listen to music, hockey, martial arts and
-                magic tricks.
+                cinema, miniatures, listen to music, hockey and martial arts.
               </p>
             </motion.div>
             <motion.div
@@ -135,7 +135,7 @@ const About = () => {
           >
             <Links
               onClick={() =>
-                (window.location = "mailto:meneghettimarcos@outlook.com")
+                (window.location = 'mailto:meneghettimarcos@outlook.com')
               }
             >
               <img
@@ -158,7 +158,7 @@ const About = () => {
       <BackToTop />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

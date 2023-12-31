@@ -1,16 +1,16 @@
-import classes from "./Contact.module.scss";
-import { motion } from "framer-motion";
+import classes from './Contact.module.scss'
+import { motion } from 'framer-motion'
 import {
   h3Animation,
   messageAnimation,
   backWords,
   opacityPage,
-} from "../../Animations/Animations";
-import Footer from "../../components/Footer/Footer";
-import { Button } from "../../components/Buttons/Button";
-import { Titlepage } from "../../components/Titlepage/Titlepage";
-import { Links } from "../../components/Links/Links";
-import BackToTop from "../../components/BackToTop/BackToTop";
+} from '../../Animations/Animations'
+import Footer from '../../components/Footer/Footer'
+import { Button } from '../../components/Buttons/Button'
+import { Titlepage } from '../../components/Titlepage/Titlepage'
+import { Links } from '../../components/Links/Links'
+import BackToTop from '../../components/BackToTop/BackToTop'
 
 const Contact = () => {
   return (
@@ -24,7 +24,7 @@ const Contact = () => {
         <section className={classes.heropage}>
           <div className={classes.heropage_content}>
             <div className={classes.heropage_content_wrapper}>
-              <Titlepage text={"Contact"} />
+              <Titlepage text={'Contact'} />
               <motion.p
                 variants={messageAnimation}
                 animate="show"
@@ -54,7 +54,7 @@ const Contact = () => {
             <div className={classes.heropage_txt_container_button}>
               <Button
                 onClick={() =>
-                  (window.location = "mailto:meneghettimarcos@outlook.com")
+                  (window.location = 'mailto:meneghettimarcos@outlook.com')
                 }
                 type="button"
                 buttonStyle="fill"
@@ -99,7 +99,7 @@ const Contact = () => {
                   <p
                     className={classes.heropage_txt_container_contact_text_txt}
                   >
-                    +33 (07) 85 68 06 59
+                    +33 (0)7 85 68 06 59
                   </p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ const Contact = () => {
           >
             <Links
               onClick={() =>
-                (window.location = "mailto:meneghettimarcos@outlook.com")
+                (window.location = 'mailto:meneghettimarcos@outlook.com')
               }
             >
               <img
@@ -171,7 +171,7 @@ const Contact = () => {
       <BackToTop />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

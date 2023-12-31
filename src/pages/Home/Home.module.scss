@@ -1,90 +1,110 @@
 @import '../../styles/index.scss';
 
 .hero {
+  &_wrapper {
+    padding: 1rem $paddingContainerExtSmall;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
-    &_wrapper {
-        padding: 1rem $paddingContainerExtSmall;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    @include breakpoint(md) {
+      padding: 1rem $paddingContainerLarge;
+      margin: 20px 0;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+  }
 
-        @include breakpoint(md) {
-            padding: 1rem $paddingContainerLarge;
-            margin: 20px 0;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-around;
-        }
+  &_text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  &_title {
+    color: $primary;
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-self: flex-start;
+
+    span {
+      color: $secondary;
     }
 
-    &_text {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    @include breakpoint(sm) {
+      font-size: 1.8rem;
+    }
+    @include breakpoint(md) {
+      font-size: 2.1rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 3rem;
+    }
+    @include breakpoint(extlg) {
+      font-size: 4rem;
+    }
+  }
 
-        @include breakpoint(md) {
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
+  &_description {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-family: $Manrope;
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 700;
+    text-align: left;
+
+    span {
+      color: $secondary;
+      margin-right: 10px;
+      font-size: 2.5rem;
     }
 
-    &_title {
-        color: $primary;
-        font-weight: 500;
-        font-size: 1.2rem;
-
-        span {
-            color: $secondary;
-        }
-
-        @include breakpoint(lg) {
-            font-size: 3rem;
-        }
+    @include breakpoint(md) {
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: left;
     }
 
-    &_description {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-        font-family: $Manrope;
-        margin: 10px 0;
-        width: 100%;
-        font-weight: 700;
-        text-align: center;
+    @include breakpoint(lg) {
+      font-size: 4.7rem;
+      line-height: 4.7rem;
+    }
+    @include breakpoint(extlg) {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+  }
 
-        span {
-            color: $secondary;
-            margin-right: 10px;
-            font-size: 2.5rem;
-        }
+  &_message {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 45px;
+    font-family: $Poppins;
+    align-self: flex-start;
+    color: rgb(113, 113, 113);
 
-        @include breakpoint(md) {
-            font-size: 3.4rem;
-            line-height: 3.4rem;
-            text-align: left;
-        }
-
-        @include breakpoint(lg) {
-            font-size: 4.7rem;
-            line-height: 4.7rem;
-        }
+    @include breakpoint(md) {
+      font-size: 1.2rem;
     }
 
-    &_message {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 45px;
-        font-family: $Poppins;
-
-        @include breakpoint(md) {
-            font-size: 1.4rem
-        }
-
-        @include breakpoint(lg) {
-            font-size: 1.5rem
-        }
+    @include breakpoint(lg) {
+      margin-top: 20px;
+      font-size: 1.4rem;
     }
+    @include breakpoint(extlg) {
+      margin-top: 20px;
+      font-size: 1.6rem;
+    }
+  }
 }

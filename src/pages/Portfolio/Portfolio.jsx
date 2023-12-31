@@ -1,17 +1,17 @@
-import classes from "./Portfolio.module.scss";
-import Works from "../../components/PortfolioWorks/Works";
-import { motion } from "framer-motion";
+import classes from './Portfolio.module.scss'
+import Works from '../../components/PortfolioWorks/Works'
+import { motion } from 'framer-motion'
 import {
   h3Animation,
   backWords,
   messageAnimation,
   opacityPage,
-} from "../../Animations/Animations";
-import Footer from "../../components/Footer/Footer";
-import { Titlepage } from "../../components/Titlepage/Titlepage";
-import { Links } from "../../components/Links/Links";
-import { Link } from "react-router-dom";
-import BackToTop from "../../components/BackToTop/BackToTop";
+} from '../../Animations/Animations'
+import Footer from '../../components/Footer/Footer'
+import { Titlepage } from '../../components/Titlepage/Titlepage'
+import { Links } from '../../components/Links/Links'
+import { Link } from 'react-router-dom'
+import BackToTop from '../../components/BackToTop/BackToTop'
 
 const Portfolio = () => {
   return (
@@ -25,14 +25,14 @@ const Portfolio = () => {
         <section className={classes.heropage}>
           <div className={classes.heropage_content}>
             <div className={classes.heropage_content_wrapper}>
-              <Titlepage text={"Portfolio"} />
+              <Titlepage text={'Portfolio'} />
               <motion.p
                 variants={messageAnimation}
                 animate="show"
                 exit="hide"
                 className={classes.heropage_message}
               >
-                Check out some of my latest Front-End case studies.
+                Check out some of my latest Full-stack case studies.
               </motion.p>
             </div>
             <motion.div
@@ -76,7 +76,7 @@ const Portfolio = () => {
             </a>
             <Link
               onClick={() =>
-                (window.location = "mailto:meneghettimarcos@outlook.com")
+                (window.location = 'mailto:meneghettimarcos@outlook.com')
               }
             >
               <img
@@ -99,7 +99,7 @@ const Portfolio = () => {
       <BackToTop />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

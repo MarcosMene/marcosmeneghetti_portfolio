@@ -1,8 +1,8 @@
-import React from "react";
-import { Portfolio } from "../../Data/Data";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import classes from "./Work.module.scss";
+import React from 'react'
+import { Portfolio } from '../../Data/Data'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import classes from './Work.module.scss'
 
 const Works = () => {
   return (
@@ -32,13 +32,14 @@ const Works = () => {
                   }
                   alt={item.alt}
                 />
+                <p>{item.language}</p>
               </motion.div>
             </Link>
-          );
+          )
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Works;
+export default Works

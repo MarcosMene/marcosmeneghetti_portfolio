@@ -1,13 +1,13 @@
-import React from "react";
-import { useParams, NavLink } from "react-router-dom";
-import { Portfolio } from "../../Data/Data";
-import { MdKeyboardBackspace } from "react-icons/md";
-import { motion } from "framer-motion";
-import classes from "./Work.module.scss";
+import React from 'react'
+import { useParams, NavLink } from 'react-router-dom'
+import { Portfolio } from '../../Data/Data'
+import { MdKeyboardBackspace } from 'react-icons/md'
+import { motion } from 'framer-motion'
+import classes from './Work.module.scss'
 
 const Work = () => {
-  const { id } = useParams();
-  const singlework = Portfolio.find((item) => item.id === parseInt(id));
+  const { id } = useParams()
+  const singlework = Portfolio.find((item) => item.id === parseInt(id))
 
   return (
     <motion.main
@@ -34,24 +34,42 @@ const Work = () => {
       <div className={classes.film}>
         <div className={classes.imageAndText}>
           <motion.img
-            initial={{ opacity: 0, x: "-100vh" }}
+            initial={{ opacity: 0, x: '-100vh' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            exit={{ opacity: 0, x: "-100vh" }}
+            exit={{ opacity: 0, x: '-100vh' }}
             src={
               process.env.PUBLIC_URL + `/images/portfolio/${singlework.image}`
             }
             alt={singlework.alt}
           />
           <motion.div
-            initial={{ opacity: 0, x: "100vh" }}
+            initial={{ opacity: 0, x: '100vh' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            exit={{ opacity: 0, x: "100vh" }}
+            exit={{ opacity: 0, x: '100vh' }}
             className={classes.workText}
           >
             <h3>{singlework.text}</h3>
             <p>{singlework.description}</p>
+            <ul className={classes.description_list}>
+              {singlework.list &&
+                singlework.list.map((item, i) => {
+                  return <li key={i}>{item}</li>
+                })}
+            </ul>
+            <h3 className={classes.workText}>Technology</h3>
+            <div className={classes.workText_technology}>
+              {singlework.technology &&
+                singlework.technology.map((item, i) => {
+                  return (
+                    <p className={classes.workText_technology_p} key={i}>
+                      {item}
+                    </p>
+                  )
+                })}
+            </div>
+            <h3 className={classes.workText}>Links</h3>
             <div className={classes.workText_links}>
               {singlework.github && (
                 <a
@@ -71,6 +89,7 @@ const Work = () => {
                   Site
                 </a>
               )}
+
               {singlework.modal && (
                 <a
                   target="_blank"
@@ -86,7 +105,7 @@ const Work = () => {
                   href={singlework.modalnpm}
                   rel="noopener noreferrer"
                 >
-                  npm modal
+                  NPM modal
                 </a>
               )}
               {singlework.figma && (
@@ -95,7 +114,7 @@ const Work = () => {
                   href={singlework.figma}
                   rel="noopener noreferrer"
                 >
-                  figma
+                  Figma
                 </a>
               )}
             </div>
@@ -103,7 +122,7 @@ const Work = () => {
         </div>
       </div>
     </motion.main>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

@@ -1,6 +1,6 @@
-import classes from "./Home.module.scss";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import classes from './Home.module.scss'
+import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import {
   filmAnimation,
   backWords,
@@ -9,13 +9,13 @@ import {
   h2anim,
   xAnimNeg,
   xAnimPos,
-} from "../../Animations/Animations";
-import Footer from "../../components/Footer/Footer";
-import { Button } from "../../components/Buttons/Button";
-import { Links } from "../../components/Links/Links";
+} from '../../Animations/Animations'
+import Footer from '../../components/Footer/Footer'
+import { Button } from '../../components/Buttons/Button'
+import { Links } from '../../components/Links/Links'
 
 const Home = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <>
       <motion.main
@@ -32,10 +32,10 @@ const Home = () => {
               exit="hide"
               className={classes.hero_title}
             >
-              Hi! I'm{" "}
-              <span variants={filmAnimation} animate="show" exit="hide">
+              Hi! I'm{' '}
+              <motion.span variants={filmAnimation} animate="show" exit="hide">
                 Marcos Meneghetti
-              </span>
+              </motion.span>
             </motion.h1>
             <motion.h2
               variants={h2anim}
@@ -43,12 +43,7 @@ const Home = () => {
               exit="hide"
               className={classes.hero_description}
             >
-              Front-End Developer Javascript
-              <div>
-                <div>
-                  <span>&</span>React
-                </div>
-              </div>
+              Full-stack Developer
             </motion.h2>
             <motion.p
               variants={xAnimPos}
@@ -59,7 +54,7 @@ const Home = () => {
               Passionate about creating code for the web.
             </motion.p>
             <Button
-              onClick={() => navigate("/portfolio")}
+              onClick={() => navigate('/portfolio')}
               type="button"
               buttonStyle="outline"
             >
@@ -82,13 +77,13 @@ const Home = () => {
           animate="show"
           className={classes.background_text}
         >
-          <h2>FRONT</h2>
-          <h2>END</h2>
+          <h2>FULL</h2>
+          <h2>STACK</h2>
         </motion.section>
       </motion.main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
