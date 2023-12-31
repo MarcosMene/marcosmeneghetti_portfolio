@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/marcosmeneghetti_portfolio/static/css/main.00cea491.css",
-    "main.js": "/marcosmeneghetti_portfolio/static/js/main.a41561e3.js",
+    "main.css": "/marcosmeneghetti_portfolio/static/css/main.af776281.css",
+    "main.js": "/marcosmeneghetti_portfolio/static/js/main.159e3e2f.js",
     "index.html": "/marcosmeneghetti_portfolio/index.html",
-    "main.00cea491.css.map": "/marcosmeneghetti_portfolio/static/css/main.00cea491.css.map",
-    "main.a41561e3.js.map": "/marcosmeneghetti_portfolio/static/js/main.a41561e3.js.map"
+    "main.af776281.css.map": "/marcosmeneghetti_portfolio/static/css/main.af776281.css.map",
+    "main.159e3e2f.js.map": "/marcosmeneghetti_portfolio/static/js/main.159e3e2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.00cea491.css",
-    "static/js/main.a41561e3.js"
+    "static/css/main.af776281.css",
+    "static/js/main.159e3e2f.js"
   ]
 }
