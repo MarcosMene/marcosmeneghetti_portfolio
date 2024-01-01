@@ -164,6 +164,7 @@ export const Portfolio = [
     language: 'PHP',
     technology: ['JS', 'JQUERY', 'BOOTSTRAP', 'PHP', 'MYSQL', 'PDO'],
   },
+
   {
     id: 9946,
     text: 'Movie app',
@@ -174,16 +175,34 @@ export const Portfolio = [
     technology: ['REACT NATIVE'],
     language: 'React native',
   },
-
+  {
+    id: 2345,
+    text: 'eatWell',
+    image: 'eatwell.jpg',
+    alt: 'eatwell application',
+    description: `eatWell is a React Native test to work with an API. You can find a lot of recipes and desserts from different contries. For the API, I have used TheMealDB (to visit the API, click on the link Site). This project includes:`,
+    github: 'https://github.com/MarcosMene/eatWell_api',
+    site: 'https://www.themealdb.com/api.php',
+    technology: ['REACT NATIVE'],
+    language: 'React native',
+    list: [
+      'react native seoul masonry',
+      'react native responsive screen',
+      'react native heroicons',
+      'react native reanimated',
+      'axios',
+      'tailwindcss',
+    ],
+  },
   {
     id: 4940,
     text: 'Pomodoro app',
     image: 'pomodoro.jpg',
     alt: 'pomodoro application',
     description: `This is a React Native application project to create a pomodoro counter. I have used sound effects to start de counter and also a sound to indicate that the timer is over. It has 3 timers: `,
-    list: ['25 minutes', '15 minutes', '5 minutes'],
     github: 'https://github.com/MarcosMene/Moviebox',
     technology: ['REACT NATIVE'],
+
     language: 'React native',
   },
   {
