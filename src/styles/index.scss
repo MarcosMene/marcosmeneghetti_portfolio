@@ -226,14 +226,16 @@ main {
 
 //buttons
 .buttons {
-  width: 260px;
+  // width: 500px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0 auto 25px;
+  align-items: center;
+  justify-content: flex-start;
+  // margin: 10px auto 25px;
+  flex-wrap: wrap;
+  gap: 20px;
 
   @include breakpoint(lg) {
-    width: 320px;
+    // width: 320px;
     margin: 0;
   }
 }
@@ -245,13 +247,15 @@ main {
   border-radius: $borderRadiusSmall;
   font-family: $Poppins;
   cursor: pointer;
-  background-color: $secondary;
-  color: $light;
+  background-color: $bg;
+  color: $dark;
   transition: 0.3s;
+  // margin-right: 20px;
+  // margin-bottom: 20px;
 
   &:hover {
-    background-color: $light;
-    color: $dark;
+    background-color: $secondary;
+    color: $bg;
   }
 
   @include breakpoint(lg) {
@@ -260,5 +264,12 @@ main {
     font-size: 1rem;
     border: 3px solid $secondary;
     font-weight: 500;
+  }
+
+  img.flags {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
   }
 }

@@ -24,8 +24,8 @@ const About = () => {
     <>
       <motion.main
         variants={opacityPage}
-        animate="show"
-        exit="hide"
+        animate='show'
+        exit='hide'
         className={classes.hero_page_wrapper}
       >
         <section className={classes.heropage}>
@@ -35,8 +35,8 @@ const About = () => {
               <div className={classes.heropage_message}>
                 <motion.p
                   variants={messageAnimation}
-                  animate="show"
-                  exit="hide"
+                  animate='show'
+                  exit='hide'
                 >
                   Full-stack Developer based in France.
                 </motion.p>
@@ -44,8 +44,8 @@ const About = () => {
               <div className={classes.buttons}>
                 <Button
                   onClick={() => navigate('/contact')}
-                  type="button"
-                  buttonStyle="outline"
+                  type='button'
+                  // buttonStyle='outline'
                 >
                   Contact Me
                 </Button>
@@ -56,10 +56,40 @@ const About = () => {
                   transition={{ duration: 0.5 }}
                   exit={{ opacity: 0, scale: 0 }}
                   className={classes.buttonLink}
-                  href="./images/about/Marcos_Meneghetti_CV.pdf"
+                  href='./images/about/Marcos_Meneghetti_CV_Full_stack_ENG.pdf'
                   download
                 >
-                  Download CV
+                  <div>
+                    Download CV
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        `/images/about/american_flag.png`
+                      }
+                      alt='french flag'
+                      className={classes.flags}
+                    />
+                  </div>
+                </motion.a>
+                <motion.a
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  exit={{ opacity: 0, scale: 0 }}
+                  className={classes.buttonLink}
+                  href='./images/about/Marcos_Meneghetti_CV_Full_stack_FR.pdf'
+                  download
+                >
+                  <div>
+                    Download CV
+                    <img
+                      src={
+                        process.env.PUBLIC_URL + `/images/about/french_flag.png`
+                      }
+                      alt='french flag'
+                      className={classes.flags}
+                    />
+                  </div>
                 </motion.a>
               </div>
             </div>
@@ -67,8 +97,8 @@ const About = () => {
             {/* links  */}
             <motion.div
               variants={h3Animation}
-              animate="show"
-              exit="hide"
+              animate='show'
+              exit='hide'
               className={classes.heropage_links}
             >
               <Links />
@@ -77,8 +107,8 @@ const About = () => {
           <div className={classes.heropage_txt_container}>
             <motion.div
               variants={scaleAnim}
-              animate="show"
-              exit="hide"
+              animate='show'
+              exit='hide'
               className={classes.heropage_txt_container_text}
             >
               <p>
@@ -105,32 +135,32 @@ const About = () => {
             </motion.div>
             <motion.div
               variants={xAnimPos50}
-              animate="show"
-              exit="hide"
+              animate='show'
+              exit='hide'
               className={classes.heropage_txt_container_photo}
             >
               <img
                 src={process.env.PUBLIC_URL + `/images/about/marcosabout.png`}
-                alt="me"
+                alt='me'
               />
             </motion.div>
           </div>
           <motion.div
             variants={paragraphs}
-            animate="show"
-            exit="hide"
+            animate='show'
+            exit='hide'
             className={classes.heropage_work}
           >
             <div className={classes.heropage_line}></div>
-            <motion.p variants={work} animate="show" exit="hide">
+            <motion.p variants={work} animate='show' exit='hide'>
               Let's work together on your next project.
             </motion.p>
             <div className={classes.heropage_line}></div>
           </motion.div>
           <motion.div
             variants={h3Animation}
-            animate="show"
-            exit="hide"
+            animate='show'
+            exit='hide'
             className={classes.heropage_links_bottom}
           >
             <Links
@@ -140,15 +170,15 @@ const About = () => {
             >
               <img
                 src={process.env.PUBLIC_URL + `/images/links/email.png`}
-                alt="email"
+                alt='email'
               />
             </Links>
           </motion.div>
         </section>
         <motion.section
           variants={backWords}
-          animate="show"
-          exit="hide"
+          animate='show'
+          exit='hide'
           className={classes.background_text}
         >
           <h2>ABO</h2>
