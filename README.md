@@ -1,4 +1,4 @@
-# This is my portfolio of Full-stact developer.
+# This is my portfolio of Full-stack developer.
 
 Hi, my name is Marcos Meneghetti. I am a Full-stack developer. Here you will find informations about me and my works as front and back-end developer.
 
