@@ -37,9 +37,9 @@ export const Webwork = [
   },
   {
     id: 1443,
-    text: 'REDUX/TOOLKIT',
-    image: 'redux.png',
-    alt: 'redux logo',
+    text: 'REACT NATIVE',
+    image: 'react_native.png',
+    alt: 'react native logo',
   },
   {
     id: 2935,
