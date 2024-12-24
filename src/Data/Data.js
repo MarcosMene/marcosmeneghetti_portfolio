@@ -138,7 +138,50 @@ export const Webdesign = [
   },
 ]
 
+export const ProjectManager = [
+  {
+    id: 8923,
+    text: 'NOTION',
+    image: 'notion.png',
+    alt: 'notion logo',
+  },
+  {
+    id: 2702,
+    text: 'TRELLO',
+    image: 'trello.png',
+    alt: 'affinity logo',
+  },
+  
+]
+
 export const Portfolio = [
+  {
+    id: 2592,
+    text: 'Tasty Drink',
+    image: 'tastydrink.jpg',
+    alt: 'personal e-commerce project Tasty drink bar and shop',
+    description: `Tasty Drink Bar & Shop is my e-commerce personal project that I have made with PHP Symfony. The objective of this was to create a website for a fictitious company called Tasty Drink Bar & Shop, showcasing the quality of service offered in the bar and store. I created this project from scratch. 
+    For connection, the users can create their account and they have access to their control panel:check their purchases; create or modify addresses; list of most desired products; they can change their password and make reservation at Tasty Drink B&S.
+    The site administrator can generate everything:
+        `,
+    list: [
+      'Products',
+      'Carriers',
+      'Orders',
+      'Employees',
+      'Menu drink and food',
+      'Opening hours for the bar and shop',
+      'Reservations',
+      'Product and customer reviews',
+      'Newsletters',
+    ],
+    github: 'https://github.com/MarcosMene/tastydrink',
+    figma: [
+      'https://www.figma.com/design/MDMNbHsUMIwMA66eqISS1p/TastyDrink?node-id=0-1&p=f&t=F5s0m8tMTBfBCTrE-0',
+    ],
+    language: 'PHP Symfony',
+    technology: ['HTML 5', 'SASS','JAVASCRIPT', 'BOOTSTRAP 5.3', 'SYMFONY 7', 'PHP 8','MARIADB', 'DOCTRINE', 'EASYADMIN', 'STRIPE'],
+  },
   {
     id: 3375,
     text: 'Garage V. Parrot',
@@ -156,7 +199,6 @@ export const Portfolio = [
       'Cars available for sale',
     ],
     github: 'https://github.com/MarcosMene/garage_parrot',
-    site: 'https://garageparrot.net/',
     figma: [
       'https://www.figma.com/file/QtBWhE3LKxJgYLePTYG9k4/Garage-Vincent-Parrot---MOCKUPS?type=design&node-id=0-1&mode=design&t=QhveeyEtCcdLyRJY-0',
       'https://www.figma.com/file/QtBWhE3LKxJgYLePTYG9k4/Garage-Vincent-Parrot---MOCKUPS?type=design&node-id=0-1&mode=design&t=QhveeyEtCcdLyRJY-0',

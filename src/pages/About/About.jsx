@@ -1,7 +1,7 @@
-import classes from './About.module.scss'
-import Footer from '../../components/Footer/Footer'
+import classes from './About.module.scss';
+import Footer from '../../components/Footer/Footer';
 
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import {
   h3Animation,
   messageAnimation,
@@ -11,15 +11,15 @@ import {
   opacityPage,
   scaleAnim,
   xAnimPos50,
-} from '../../Animations/Animations'
-import { useNavigate } from 'react-router-dom'
-import { Button } from '../../components/Buttons/Button'
-import { Titlepage } from '../../components/Titlepage/Titlepage'
-import { Links } from '../../components/Links/Links'
-import BackToTop from '../../components/BackToTop/BackToTop'
+} from '../../Animations/Animations';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '../../components/Buttons/Button';
+import { Titlepage } from '../../components/Titlepage/Titlepage';
+import { Links } from '../../components/Links/Links';
+import BackToTop from '../../components/BackToTop/BackToTop';
 
 const About = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <motion.main
@@ -56,40 +56,10 @@ const About = () => {
                   transition={{ duration: 0.5 }}
                   exit={{ opacity: 0, scale: 0 }}
                   className={classes.buttonLink}
-                  href='./images/about/Marcos_Meneghetti_CV_Full_stack_ENG.pdf'
+                  href='./images/about/Marcos_Meneghetti_CV_Full_stack_English.pdf'
                   download
                 >
-                  <div>
-                    Download CV
-                    <img
-                      src={
-                        process.env.PUBLIC_URL +
-                        `/images/about/american_flag.png`
-                      }
-                      alt='french flag'
-                      className={classes.flags}
-                    />
-                  </div>
-                </motion.a>
-                <motion.a
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                  exit={{ opacity: 0, scale: 0 }}
-                  className={classes.buttonLink}
-                  href='./images/about/Marcos_Meneghetti_CV_Full_stack_FR.pdf'
-                  download
-                >
-                  <div>
-                    Download CV
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + `/images/about/french_flag.png`
-                      }
-                      alt='french flag'
-                      className={classes.flags}
-                    />
-                  </div>
+                  <div>Download CV</div>
                 </motion.a>
               </div>
             </div>
@@ -126,6 +96,9 @@ const About = () => {
                 for 15 years in short and feature films, TV shows and for
                 various animation studios like Blue Spirit Canada, Bullit
                 Studio, TeamTo, Citron Vache and Otto Desenhos Animados.
+              </p>
+              <p>
+              In 2022, I earned my Application Developer diploma at OpenClassrooms, where I worked on several projects using JavaScript and React. Driven to refine my skills, I subsequently obtained a Web and Mobile Web Developer diploma at Studi in 2023, during which I deepened my knowledge of React, React Native, PHP, MySQL, and Symfony.
               </p>
 
               <p>
@@ -188,7 +161,7 @@ const About = () => {
       <BackToTop />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

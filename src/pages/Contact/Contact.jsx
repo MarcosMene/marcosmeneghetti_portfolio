@@ -1,24 +1,24 @@
-import classes from './Contact.module.scss'
-import { motion } from 'framer-motion'
+import classes from './Contact.module.scss';
+import { motion } from 'framer-motion';
 import {
   h3Animation,
   messageAnimation,
   backWords,
   opacityPage,
-} from '../../Animations/Animations'
-import Footer from '../../components/Footer/Footer'
-import { Button } from '../../components/Buttons/Button'
-import { Titlepage } from '../../components/Titlepage/Titlepage'
-import { Links } from '../../components/Links/Links'
-import BackToTop from '../../components/BackToTop/BackToTop'
+} from '../../Animations/Animations';
+import Footer from '../../components/Footer/Footer';
+import { Button } from '../../components/Buttons/Button';
+import { Titlepage } from '../../components/Titlepage/Titlepage';
+import { Links } from '../../components/Links/Links';
+import BackToTop from '../../components/BackToTop/BackToTop';
 
 const Contact = () => {
   return (
     <>
       <motion.main
         variants={opacityPage}
-        animate="show"
-        exit="hide"
+        animate='show'
+        exit='hide'
         className={classes.hero_page_wrapper}
       >
         <section className={classes.heropage}>
@@ -27,8 +27,8 @@ const Contact = () => {
               <Titlepage text={'Contact'} />
               <motion.p
                 variants={messageAnimation}
-                animate="show"
-                exit="hide"
+                animate='show'
+                exit='hide'
                 className={classes.heropage_message}
               >
                 If you have a question or you want just to say hello, I'll will
@@ -43,8 +43,8 @@ const Contact = () => {
             {/* links  */}
             <motion.div
               variants={h3Animation}
-              animate="show"
-              exit="hide"
+              animate='show'
+              exit='hide'
               className={classes.heropage_links}
             >
               <Links />
@@ -56,8 +56,8 @@ const Contact = () => {
                 onClick={() =>
                   (window.location = 'mailto:meneghettimarcos@outlook.com')
                 }
-                type="button"
-                buttonStyle="fill"
+                type='button'
+                buttonStyle='fill'
               >
                 Get in touch
               </Button>
@@ -75,7 +75,7 @@ const Contact = () => {
                     src={
                       process.env.PUBLIC_URL + `/images/contact/emailIcon.png`
                     }
-                    alt="email icon"
+                    alt='email icon'
                   />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
@@ -92,14 +92,14 @@ const Contact = () => {
                     src={
                       process.env.PUBLIC_URL + `/images/contact/phoneIcon.png`
                     }
-                    alt="phone icon"
+                    alt='phone icon'
                   />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
                   <p
                     className={classes.heropage_txt_container_contact_text_txt}
                   >
-                    +33 (0)7 85 68 06 59
+                  &#43;33&#32;(0)7&#45;8568&#45;0659
                   </p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                     src={
                       process.env.PUBLIC_URL + `/images/contact/githubIcon.png`
                     }
-                    alt="github icon"
+                    alt='github icon'
                   />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
@@ -127,7 +127,7 @@ const Contact = () => {
                       process.env.PUBLIC_URL +
                       `/images/contact/linkedinIcon.png`
                     }
-                    alt="linkedin icon"
+                    alt='linkedin icon'
                   />
                 </div>
                 <div className={classes.heropage_txt_container_contact_text}>
@@ -142,8 +142,8 @@ const Contact = () => {
           </div>
           <motion.div
             variants={h3Animation}
-            animate="show"
-            exit="hide"
+            animate='show'
+            exit='hide'
             className={classes.heropage_links_bottom}
           >
             <Links
@@ -153,15 +153,15 @@ const Contact = () => {
             >
               <img
                 src={process.env.PUBLIC_URL + `/images/links/email.png`}
-                alt="email"
+                alt='email'
               />
             </Links>
           </motion.div>
         </section>
         <motion.div
           variants={backWords}
-          animate="show"
-          exit="hide"
+          animate='show'
+          exit='hide'
           className={classes.background_text}
         >
           <h2>CON</h2>
@@ -171,7 +171,7 @@ const Contact = () => {
       <BackToTop />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
